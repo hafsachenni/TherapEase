@@ -7,11 +7,8 @@
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Installation & Setup](#installation--setup)
-5. [Usage](#usage)
-6. [Challenges and Lessons Learned](#challenges-and-lessons-learned)
-7. [Future Enhancements](#future-enhancements)
-8. [Contributing](#contributing)
-9. [License](#license)
+7. [Contributors](#contributors)
+8. [License](#license)
 
 ## Overview
 
@@ -73,6 +70,8 @@ npm install
 ```bash
 npm run dev
 ```
+- Then, the development server will be started at http://localhost:5173/
 
-## Usage
-Then, the development server will be started at http://localhost:5173/
+
+## Contributors:
+Hafsa Chenni[https://github.com/hafsachenni]
