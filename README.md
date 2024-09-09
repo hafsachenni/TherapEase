@@ -1,8 +1,3 @@
-<p align="center" style="margin: 0;">
-  <img src="./public/logo2.png" alt="logo" width="140" height="140">
-</p>
-
-
 # TherapEase - Mental Wellness Platform
 
 **TherapEase** is a mental wellness platform where users can easily book appointments with licensed therapists based on their needs. The platform offers flexible subscription packages, allowing users to choose what suits them best. This project is fully built with React, Tailwind CSS, Vite, and various other frontend tools, delivering a seamless and interactive user experience.
@@ -80,3 +75,8 @@ npm run dev
 
 ## Contributors:
 Hafsa Chenni[https://github.com/hafsachenni]
+
+
+<p align="center" style="margin: 0;">
+  <img src="./public/logo2.png" alt="logo" width="140" height="140">
+</p>
