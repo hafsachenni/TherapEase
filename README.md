@@ -75,8 +75,3 @@ npm run dev
 
 ## Contributors:
 Hafsa Chenni[https://github.com/hafsachenni]
-
-
-<p align="center" style="margin: 0;">
-  <img src="./public/logo2.png" alt="logo" width="140" height="140">
-</p>
