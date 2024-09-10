@@ -5,7 +5,7 @@
 body {
     scroll-behavior: smooth;
 }
-.isActive{
+.isActiveClr{
     color: #F0E8D0 !important;
 }
 

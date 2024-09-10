@@ -28,14 +28,14 @@ const Services = () => {
     <TabPanel>
       <div className='flex flex-col md:flex-row gap-8 mt-8'>
         <div className='md:w-1/2 rounded-lg p-12 font-secondary'>
-        <h3 className='text-4xl font-semibold text-[#a78d3a] mb-4'>Couple Counseling</h3>
-        <p className='text-lg mb-8'>We help couples improve communication, resolve conflicts, and strengthen their relationships through tailored, professional therapy that fosters lasting connection and understanding.</p>
-        <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
-        <ul className='list-disc space-y-3 list-inside'>
-          <li>Understanding Relationships Dynamic</li>
-          <li>Improved Communication</li>
-          <li>Conflict Resolution</li>
-        </ul>
+          <h3 className='text-4xl font-semibold text-[#a78d3a] mb-4'>Couple Counseling</h3>
+          <p className='text-lg mb-8'>We help couples improve communication, resolve conflicts, and strengthen their relationships through tailored, professional therapy that fosters lasting connection and understanding.</p>
+          <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
+          <ul className='list-disc space-y-3 list-inside'>
+            <li>Understanding Relationships Dynamic</li>
+            <li>Improved Communication</li>
+            <li>Conflict Resolution</li>
+          </ul>
         </div>
         <div className='md:w-1/2'>
           <img src={service1} alt='couple counseling service' className='rounded-2xl object-cover w-full h-auto'/>
