@@ -2,10 +2,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
-
 body {
     scroll-behavior: smooth;
 }
-.isActiveClr{
+.isActive{
     color: #F0E8D0 !important;
+}
+
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #325343;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  border: 1px solid #325343 !important;
+  color: black;
+  border-radius: 5px;
+  outline: none;
+
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
 }
