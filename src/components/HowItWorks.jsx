@@ -3,7 +3,7 @@ import React from 'react'
 const HowItWorks = () => {
   return (
     <div className='bg-working-img bg-cover bg-center relative py-12'>
-      <div className='bg-[#383838] inset-0 bg-opacity-90 absolute'></div>
+      <div className='bg-[#333333] inset-0 bg-opacity-90 absolute'></div>
         <div className='relative container mx-auto px-4 py-28'>
           <div className='mb-28 text-center text-white'>
             <h2 className='text-4xl font-secondary font-bold mb-4'>How It Works</h2>
