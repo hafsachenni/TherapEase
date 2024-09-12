@@ -42,8 +42,50 @@ const pricingPlans = [
 
 
 const Pricing = () => {
+  const handleScrollToContact = () => {
+    const targetSection = document.getElementById('contact');
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
-    <div className='bg-black h-screen' id='pricing'>
+    <div id='pricing' className='bg-[#f7f8fc] pt-32'>
+      <div className='mx-auto container px-8'>
+        <div className='text-center'>
+          <h2 className='text-4xl font-secondary font-bold mb-3'>Flexible Pricing for Comprehensive Care</h2>
+          <p className='text-lg mb-12 md:w-2/3 mx-auto'>We offer flexible pricing options to ensure everyone has access to the care they need. Choose the plan that best fits your personal and financial needs for a tailored wellness experience.</p>
+        </div>
+
+
+        {/* pricing plans*/}
+        <div className='flex flex-col md:flex-row gap-8 mx-auto md:w-5/6 pb-12'>
+          {pricingPlans.map((plan, index) => (
+            <div key={index} className='bg-primary rounded-lg shadow-lg flex-1 p-6'>
+              <h3 className='text-2xl font-semibold mb-4'>{plan.name}</h3>
+              <hr className='w-24 border border-heroBgClr '/>
+              <p className='font-bold text-3xl mb-4'>{plan.price} <span className='font-normal text-lg'>/month</span></p>
+              <p className='text-lg mb-4'>{plan.description}</p>
+              <ul className='list-disc list-inside space-y-2 mb-6'>
+                {
+                  plan.features.map((feature, index) => (
+                    <li key={index} className='pb-4'>{feature}</li>
+                  ))
+                }
+              </ul>
+
+              <button
+              onClick={handleScrollToContact}
+              className='bg-heroBgClr text-white py-2 px-4 rounded hover:bg-heroBgClr/90'>Get Started</button>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
       
     </div>
   )
