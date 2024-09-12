@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { FaUser, FaClipboardUser, FaPhone, FaHeartCircleCheck } from "react-icons/fa6";
 
 const ContactUs = () => {
   return (

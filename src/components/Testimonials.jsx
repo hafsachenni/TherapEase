@@ -21,7 +21,7 @@ const testimonials = [
 
 
 
-const Testimonial = () => {
+const Testimonials = () => {
   return (
     <div id='testimonial' className='bg-[#f7f8fc] py-12'>
       <div className='container mx-auto pb-20'>
@@ -61,4 +61,4 @@ const Testimonial = () => {
   )
 }
 
-export default Testimonial
+export default Testimonials
