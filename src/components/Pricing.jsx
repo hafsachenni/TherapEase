@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const pricingPlans = [
@@ -39,18 +40,13 @@ const pricingPlans = [
 
 
 
-
-
 const Pricing = () => {
-  const handleScrollToContact = () => {
-    const targetSection = document.getElementById('contact');
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: 'smooth'
-      })
-    }
-  }
+  const navigate = useNavigate();
+  const handleNavigation = (plan) => {
+    navigate('/plan-info', {state: {plan}});
+};
+
+
 
   return (
     <div id='pricing' className='bg-[#f7f8fc] pt-32'>
@@ -78,7 +74,7 @@ const Pricing = () => {
               </ul>
 
               <button
-              onClick={handleScrollToContact}
+              onClick={() => handleNavigation(plan)}
               className='bg-heroBgClr text-white py-2 px-4 rounded hover:bg-heroBgClr/90'>Get Started</button>
             </div>
           ))}
