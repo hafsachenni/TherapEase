@@ -17,7 +17,7 @@ const Footer = () => {
               <img src='/logo2.png' alt='footer logo' className='w-[130px] h-[60px]'/>
             </a>
           </div>
-          <p className='text-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nemo illum, inventore consectetur sint quidem</p>
+          <p className='text-para'>For any inquiries or assistance, feel free to reach out to us. Our team is here to help with any questions or concerns you may have.</p>
           <div className='flex space-x-4'>
             <a href='#' className='rounded-full bg-gray-200 text-heroBgClr size-10 flex items-center justify-center hover:bg-gray-300 hover:text-heroBgClr/90'><FaFacebook className='text-xl'/></a>
             <a href='#' className='rounded-full bg-gray-200 text-heroBgClr size-10 flex items-center justify-center hover:bg-gray-300 hover:text-heroBgClr/90'><FaXTwitter className='text-xl'/></a>

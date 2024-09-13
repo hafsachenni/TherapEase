@@ -94,7 +94,7 @@ const closeModal = () => {
 
             {/*right side */}
             <div className='bg-white rounded-md p-8 space-y-8'>
-              <h3 className='mb-4 text-2xl font-bold'>Book an Appointment</h3>
+              <h3 className='mb-4 text-2xl font-bold font-secondary'>Book an Appointment</h3>
               <form onSubmit={handleSubmitButton} className='space-y-8'>
                 <div className='flex sm:flex-row flex-col gap-4'>
                   <input
