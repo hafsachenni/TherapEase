@@ -30,7 +30,7 @@ const Services = () => {
         <div className='md:w-1/2 rounded-lg p-12 font-secondary'>
           <h3 className='text-4xl font-semibold text-[#a78d3a] mb-4'>Couple Counseling</h3>
           <p className='text-lg mb-8'>We help couples improve communication, resolve conflicts, and strengthen their relationships through tailored, professional therapy that fosters lasting connection and understanding.</p>
-          <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
+          <h4 className='text-2xl text-black mb-4'>Benefits</h4>
           <ul className='list-disc space-y-3 list-inside'>
             <li>Understanding Relationships Dynamic</li>
             <li>Improved Communication</li>
@@ -48,7 +48,7 @@ const Services = () => {
       <div className='md:w-1/2 rounded-lg p-12 font-secondary '>
         <h3 className='text-4xl font-semibold text-[#a78d3a] mb-4 '>Parenting Skills</h3>
         <p className='mb-8 text-lg'>We offer expert guidance and effective strategies to help parents navigate the challenges of raising children. Our approach fosters a healthy, supportive, and nurturing family environment.</p>
-        <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
+        <h4 className='text-2xl text-black mb-4'>Benefits</h4>
         <ul className='list-disc list-inside space-y-3'>
           <li>Enhanced Communication</li>
           <li>Stronger Family Bonds</li>
@@ -66,7 +66,7 @@ const Services = () => {
       <div className='md:w-1/2 rounded-lg p-12 font-secondary '>
         <h3 className='text-4xl font-semibold text-[#a78d3a] mb-4 '>Feeling Stuck</h3>
         <p className='mb-8 text-lg'>We assist individuals in breaking free from mental blocks and identifying goals. Our expert guidance helps you overcome feelings of stagnation and regain motivation, providing the clarity and direction needed for a more fulfilling life.</p>
-        <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
+        <h4 className='text-2xl text-black mb-4'>Benefits</h4>
         <ul className='list-disc list-inside space-y-3'>
           <li>Renewed Perspective</li>
           <li>Enhanced Motivation</li>
@@ -84,7 +84,7 @@ const Services = () => {
       <div className='md:w-1/2 rounded-lg p-12 font-secondary '>
         <h3 className='text-4xl font-semibold text-[#a78d3a] mb-4 '>Self Confidence</h3>
         <p className='mb-8 text-lg'>We provide tools and techniques to boost self-esteem, helping individuals believe in themselves and achieve their full potential. Our approach builds resilience, empowering you to face challenges with confidence.</p>
-        <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
+        <h4 className='text-2xl text-black mb-4'>Benefits</h4>
         <ul className='list-disc list-inside space-y-3'>
           <li>Improved Self-Esteem</li>
           <li>Enhanced Assertiveness</li>
