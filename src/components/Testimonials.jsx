@@ -35,7 +35,7 @@ const Testimonials = () => {
           {
             testimonials.map((testimonial, index) => (
               <div key={index} className='bg-white rounded-lg relative flex-1 p-6 shadow-2xl'>
-                <div className='absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2'>
+                <div className='absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2'>
                   <IoChatboxEllipses className='size-12 text-[#bea759]'/>
                 </div>
 
