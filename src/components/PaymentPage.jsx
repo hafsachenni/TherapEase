@@ -33,6 +33,10 @@ const PaymentPage = () => {
     setCvv('');
   }
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className='py-16 px-8 container mx-auto bg-white mt-20'>
       <form className='max-w-lg mx-auto bg-white p-8 py-20 rounded-lg shadow-lg'
@@ -91,7 +95,9 @@ const PaymentPage = () => {
         className='w-full bg-heroBgClr text-white py-2 rounded-lg hover:bg-heroBgClr/90'>Confirm Payment</button>
       </form>
       <div className='text-center mt-5'>
-        <Link to='/' className='text-heroBgClr underline hover:text-heroBgClr/90'>
+        <Link to='/' className='text-heroBgClr underline hover:text-heroBgClr/90'
+        onClick={handleClick}
+        >
         Go back to home</Link>
       </div>
       
