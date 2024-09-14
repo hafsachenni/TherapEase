@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/animations';
 
 
 const pricingPlans = [
@@ -49,7 +51,12 @@ const Pricing = () => {
 
 
   return (
-    <div id='pricing' className='bg-[#f7f8fc] pt-32'>
+    <motion.div
+    variants={fadeIn('down', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.7}}
+    id='pricing' className='bg-[#f7f8fc] pt-32'>
       <div className='mx-auto container px-8'>
         <div className='text-center'>
           <h2 className='text-4xl font-secondary font-bold mb-3'>Flexible Pricing for Comprehensive Care</h2>
@@ -83,7 +90,7 @@ const Pricing = () => {
 
       </div>
       
-    </div>
+    </motion.div>
   )
 }
 

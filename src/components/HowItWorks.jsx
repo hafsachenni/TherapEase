@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
+import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/animations';
 
 const HowItWorks = () => {
   return (
     <div className='bg-working-img bg-cover bg-center relative py-12'>
-      <div className='bg-[#333333] inset-0 bg-opacity-90 absolute'></div>
-        <div className='relative container mx-auto px-4 py-28'>
+      <div className='bg-[#222222] inset-0 bg-opacity-90 absolute'></div>
+        <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.7}}
+        className='relative container mx-auto px-4 py-28'>
           <div className='mb-28 text-center text-white'>
             <h2 className='text-4xl font-secondary font-bold mb-4'>How It Works</h2>
             <p className=' text-lg md:w-1/2 w-full mx-auto'>Discover how our streamlined process guides you through every step, from initial consultation to personalized therapy sessions. Our approach ensures a smooth and supportive experience tailored to your needs.</p>
@@ -33,7 +40,7 @@ const HowItWorks = () => {
             </div>
 
           </div>
-        </div>
+        </motion.div>
     </div>
   )
 }

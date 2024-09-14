@@ -2,6 +2,8 @@ import React from 'react';
 import { IoChatboxEllipses } from "react-icons/io5";
 import review1 from '../assets/reviewImage1.webp';
 import review2 from '../assets/reviewImage2.webp';
+import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/animations';
 
 
 const testimonials = [
@@ -31,7 +33,12 @@ const Testimonials = () => {
         </div>
 
 
-        <div className='flex flex-col md:flex-row md:w-4/5 mx-auto md:gap-12 gap-8'>
+        <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.7}}
+        className='flex flex-col md:flex-row md:w-4/5 mx-auto md:gap-12 gap-8'>
           {
             testimonials.map((testimonial, index) => (
               <div key={index} className='bg-white rounded-lg relative flex-1 p-6 shadow-2xl'>
@@ -53,7 +60,7 @@ const Testimonials = () => {
               </div>
             ))
           }
-        </div>
+        </motion.div>
 
       </div>
       

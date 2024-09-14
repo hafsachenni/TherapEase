@@ -6,11 +6,19 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/animations';
+
 
 const Footer = () => {
   return (
     <div className='py-12 bg-gray-100 px-8'>
-      <div className='container mx-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8'>
+      <motion.div
+      variants={fadeIn('down', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.7}}
+      className='container mx-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8'>
         <div className='space-y-6 mr-14'>
           <div className='flex items-center space-x-2'>
             <a href='/'>
@@ -88,7 +96,7 @@ const Footer = () => {
 
         </div>
 
-      </div>
+      </motion.div>
     </div>
   )
 }

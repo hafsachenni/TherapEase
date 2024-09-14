@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser, FaClipboardUser, FaPhone, FaHeartCircleCheck } from "react-icons/fa6";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/animations';
 
 
 
@@ -40,7 +42,12 @@ const closeModal = () => {
       <div className='container mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:w-4/5 mx-auto items-center'>
           {/* Left side */}
-          <div className='space-y-8'>
+          <motion.div
+          variants={fadeIn('right', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false, amount: 0.7}}
+          className='space-y-8'>
             <h2 className='text-4xl font-bold font-secondary mb-4 text-white'>Make an appointment</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8 text-white'>
 
@@ -87,13 +94,18 @@ const closeModal = () => {
                     </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
 
 
 
             {/*right side */}
-            <div className='bg-white rounded-md p-8 space-y-8'>
+            <motion.div
+            variants={fadeIn('left', 0.2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.7}}
+            className='bg-white rounded-md p-8 space-y-8'>
               <h3 className='mb-4 text-2xl font-bold font-secondary'>Book an Appointment</h3>
               <form onSubmit={handleSubmitButton} className='space-y-8'>
                 <div className='flex sm:flex-row flex-col gap-4'>
@@ -156,7 +168,7 @@ const closeModal = () => {
                   Send Message
                 </button>
               </form>
-            </div>
+            </motion.div>
           </div>
         </div>
 

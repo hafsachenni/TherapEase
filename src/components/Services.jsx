@@ -4,10 +4,18 @@ import service2 from '../assets/serviceImage2.webp';
 import service3 from '../assets/serviceImage3.webp';
 import service4 from '../assets/serviceImage4.webp';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/animations';
+
 
 const Services = () => {
   return (
-    <div id='services' className='bg-[#f7f8fc]'>
+    <motion.div id='services'
+    variants={fadeIn('up', 0)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.7}}
+    className='bg-[#f7f8fc]'>
       <div className='pt-28 px-4 container mx-auto'>
         <div className='text-center space-y-5'>
           <h2 className='text-4xl font-secondary font-bold text-heroBgClr'>What Can We Do Together</h2>
@@ -99,7 +107,7 @@ const Services = () => {
   </Tabs>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
