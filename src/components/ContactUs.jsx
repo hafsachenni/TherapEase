@@ -166,9 +166,9 @@ const closeModal = () => {
         {modal && (
           <div className='fixed inset-0 flex bg-black bg-opacity-90 items-center justify-center'>
             <div className='bg-white p-8 m-4 rounded-md shadow-lg'>
-              <h2 className='font-bold text-2xl mb-4'>Thank you!</h2>
+              <h2 className='font-bold text-2xl mb-4 font-secondary'>Thank you!</h2>
               <p>Thank you {name}. Your submission has been received. {therapist} will be in touch with you shortly.</p>
-              <button className='mt-4 px-4 py-2 bg-heroBgClr text-white rounded-md'
+              <button className='mt-4 px-4 py-2 bg-heroBgClr text-white rounded-md hover:bg-heroBgClr/90'
               onClick={closeModal}
               >Close</button>
 
