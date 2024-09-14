@@ -52,7 +52,7 @@ const PaymentPage = () => {
         <div className='mb-4'>
           <label className='block text-sm font-medium'>Card Number</label>
           <input 
-          type='text'
+          type='number'
           value={cardNumber}
           onChange={e => setCardNumber(e.target.value)}
           required
@@ -65,7 +65,7 @@ const PaymentPage = () => {
           <div className='flex-1'>
             <label className='block text-sm font-medium'>Expiry Date</label>
             <input
-            type='text'
+            type='number'
             value={expiryDate}
             onChange={e => setExpiryDate(e.target.value)}
             required
@@ -77,7 +77,7 @@ const PaymentPage = () => {
         <div className='flex-1'>
           <label className='block text-sm font-medium'>CVV</label>
           <input
-          type='text'
+          type='number'
           value={cvv}
           onChange={e => setCvv(e.target.value)}
           required
