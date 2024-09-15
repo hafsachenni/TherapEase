@@ -1,6 +1,6 @@
 import React from 'react';
-import missionImage from '../assets/ourMission.jpg';
-import teamImage from '../assets/ourTeam.jpg';
+import missionImage from '../assets/ourMission.webp';
+import teamImage from '../assets/ourTeam.webp';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../utils/animations';
 
@@ -24,8 +24,10 @@ const AboutUsPage = () => {
           whileInView={'show'}
           viewport={{once: false, amount: 0.7}}
           className='md:w-1/2 mb-8 md:mb-0'>
-            <img src={missionImage} alt='Our Mission' className='w-full rounded-full md:h-[450px] h-auto object-cover shadow-lg' loading="lazy" />
+            <img src={missionImage} alt='Our Mission' className='w-full rounded-full md:h-[450px] h-auto object-cover shadow-lg' />
           </motion.div>
+
+
           <motion.div
           variants={fadeIn('left', 0.2)}
           initial='hidden'
@@ -48,11 +50,8 @@ const AboutUsPage = () => {
         </div>
 
         {/* Team Section */}
-        <motion.div
-        variants={fadeIn('up', 0.2)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
+        <div
+        
         className='md:flex md:items-center mb-12 p-7'>
           <div className='md:w-1/2 md:pr-12'>
             <h2 className='text-4xl font-bold font-secondary mb-6 text-[#a78d3a] leading-snug'>
@@ -68,9 +67,9 @@ const AboutUsPage = () => {
             </p>
           </div>
           <div className='md:w-1/2 mt-8 md:mt-0'>
-            <img src={teamImage} alt='Our Team' className='w-full rounded-3xl md:h-[450px] h-auto object-cover shadow-lg' loading="lazy"/>
+            <img src={teamImage} alt='Our Team' className='w-full rounded-3xl md:h-[450px] h-auto object-cover shadow-lg'/>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
