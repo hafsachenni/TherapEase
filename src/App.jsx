@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SelectedPlanPage from './components/SelectedPlanPage';
 import PaymentPage from './components/PaymentPage';
+import AboutUsPage from './components/AboutUsPage';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
             <ContactUs />
           </>
         }/>
+        <Route path='/about-us' element={<AboutUsPage />} />
         <Route path='/plan-info' element={<SelectedPlanPage />} />
         <Route path="/payment" element={<PaymentPage />} />
       </Routes>

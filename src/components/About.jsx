@@ -4,6 +4,7 @@ import { CiPlay1 } from "react-icons/ci";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import {fadeIn} from '../utils/animations';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -14,6 +15,11 @@ const About = () => {
 
   const handleCloseVideo = () => {
     setIsVideoPlaying(false)
+  }
+  const navigate = useNavigate();
+  const navigationToAbout = () => {
+    navigate('about-us');
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -49,11 +55,13 @@ const About = () => {
           <div className='md:w-1/2 w-full'>
             <h2 className='text-4xl font-secondary capitalize font-bold leading-snug mb-4'>Personalized Therapy and Support</h2>
             <p className='text-lg mb-12 md:pr-8'>At TherapEase, we provide dedicated therapy services to support your journey towards mental wellness. Our mission is to offer compassionate guidance and effective tools to help you manage life's challenges.</p>
-            <button className='bg-[#bea759] rounded-md py-3.5 px-8 font-medium hover:bg-[#bea759]/90'>
-              <a href='#contact' className='flex items-center gap-1'>
-                <span className='text-black'>Get Started</span>
+            <button
+            onClick={navigationToAbout}
+            className='bg-[#bea759] rounded-md py-3.5 px-8 font-medium hover:bg-[#bea759]/90'>
+              <div className='flex items-center gap-1'>
+                <span className='text-black'>Read more</span>
                 <FaCircleArrowRight className='text-black'/>
-              </a>
+              </div>
             </button>
           </div>
         </div>

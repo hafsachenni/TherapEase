@@ -51,13 +51,13 @@ const Pricing = () => {
 
 
   return (
-    <motion.div
-    variants={fadeIn('down', 0.2)}
-    initial='hidden'
-    whileInView={'show'}
-    viewport={{once: false, amount: 0.7}}
-    id='pricing' className='bg-[#f7f8fc] pt-32'>
-      <div className='mx-auto container px-8'>
+    <div id='pricing' className='bg-[#f7f8fc] pt-32'>
+      <motion.div
+      variants={fadeIn('down', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.7}}
+      className='mx-auto container px-8'>
         <div className='text-center'>
           <h2 className='text-4xl font-secondary font-bold mb-3'>Flexible Pricing for Comprehensive Care</h2>
           <p className='text-lg mb-12 md:w-2/3 mx-auto'>We offer flexible pricing options to ensure everyone has access to the care they need. Choose the plan that best fits your personal and financial needs for a tailored wellness experience.</p>
@@ -88,9 +88,9 @@ const Pricing = () => {
 
         </div>
 
-      </div>
+      </motion.div>
       
-    </motion.div>
+    </div>
   )
 }
 

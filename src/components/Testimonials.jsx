@@ -26,19 +26,19 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div id='testimonial' className='bg-[#f7f8fc] py-12'>
-      <div className='container mx-auto pb-20'>
+      <motion.div
+      variants={fadeIn('up', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.7}}
+      className='container mx-auto pb-20'>
         <div className='text-center'>
           <h2 className='text-4xl font-secondary font-bold mb-3'>Our Client's Success Stories</h2>
           <p className='md:w-1/2 mx-auto text-lg mb-12'>Discover how our clients have transformed their lives through our tailored therapy sessions, overcoming challenges and achieving personal growth.</p>
         </div>
 
 
-        <motion.div
-        variants={fadeIn('up', 0.2)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
-        className='flex flex-col md:flex-row md:w-4/5 mx-auto md:gap-12 gap-8'>
+        <div className='flex flex-col md:flex-row md:w-4/5 mx-auto md:gap-12 gap-8'>
           {
             testimonials.map((testimonial, index) => (
               <div key={index} className='bg-white rounded-lg relative flex-1 p-6 shadow-2xl'>
@@ -60,9 +60,9 @@ const Testimonials = () => {
               </div>
             ))
           }
-        </motion.div>
+        </div>
 
-      </div>
+      </motion.div>
       
     </div>
   )
