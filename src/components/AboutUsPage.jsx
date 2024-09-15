@@ -57,7 +57,7 @@ const AboutUsPage = () => {
         viewport={{once: false, amount: 0.7}}
         className='md:flex md:items-center mb-12 p-7'>
           <div className='md:w-1/2 md:pr-12'>
-            <h2 className='text-4xl font-bold font-secondary mb-6 text-[#a78d3a] leading-snug'>
+            <h2 className='text-4xl font-bold font-secondary mb-6 text-black leading-snug'>
               Meet Our Team
             </h2>
             <p className='text-xl text-gray-800 font-secondary leading-relaxed'>
